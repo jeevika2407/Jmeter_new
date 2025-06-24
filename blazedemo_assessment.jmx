@@ -64,7 +64,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Launch" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Launch">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -83,7 +83,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor">
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
               <stringProp name="filename"></stringProp>
               <stringProp name="parameters"></stringProp>
               <boolProp name="resetInterpreter">false</boolProp>
@@ -165,7 +165,7 @@ if (!extract) {
             <hashTree/>
           </hashTree>
         </hashTree>
-        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="false">
           <stringProp name="LoopController.loops">1</stringProp>
         </LoopController>
         <hashTree>
@@ -278,7 +278,7 @@ if (!extract) {
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
-                <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor- to and from city">
+                <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor- to and from city" enabled="true">
                   <stringProp name="filename"></stringProp>
                   <stringProp name="parameters"></stringProp>
                   <boolProp name="resetInterpreter">false</boolProp>
@@ -290,7 +290,7 @@ vars.put(&quot;fromPort&quot;,from[i]);
 vars.put(&quot;toPort&quot;,toCity[j]);</stringProp>
                 </BeanShellPreProcessor>
                 <hashTree/>
-                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-flight id">
+                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-flight id" enabled="true">
                   <boolProp name="resetInterpreter">false</boolProp>
                   <stringProp name="parameters"></stringProp>
                   <stringProp name="filename"></stringProp>
@@ -311,7 +311,7 @@ if (matcher.find()) {
 }</stringProp>
                 </BeanShellPostProcessor>
                 <hashTree/>
-                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-substring destination city">
+                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-substring destination city" enabled="true">
                   <boolProp name="resetInterpreter">false</boolProp>
                   <stringProp name="parameters"></stringProp>
                   <stringProp name="filename"></stringProp>
@@ -348,7 +348,7 @@ if(extract) {
                   <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
                 </BeanShellAssertion>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="flight_id">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="flight_id" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">flight_number</stringProp>
                   <stringProp name="RegexExtractor.regex">value=&quot;(.*?)&quot; name=&quot;flight&quot;</stringProp>
@@ -372,7 +372,7 @@ Match[5][1]=4346</stringProp>
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="choose_this_flight" enabled="true">
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="choose_this_flight">
               <boolProp name="TransactionController.parent">true</boolProp>
               <boolProp name="TransactionController.includeTimers">false</boolProp>
             </TransactionController>
@@ -1193,7 +1193,7 @@ GÝ¨&gt;)ï¿½eï¿½ï¿½ï¿½ï¿½ï¿½&#x6;ï¿½ï¿½@&#x1;v]v&#x4;ï¿½ï¿½mï¿½&#x3;&gt;ï¿½ï¿½ufï
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
-                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-total price">
+                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-total price" enabled="true">
                   <boolProp name="resetInterpreter">false</boolProp>
                   <stringProp name="parameters"></stringProp>
                   <stringProp name="filename"></stringProp>
@@ -1231,7 +1231,7 @@ if (extract) {
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="purchase_flight" enabled="true">
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="purchase_flight">
               <boolProp name="TransactionController.parent">true</boolProp>
               <boolProp name="TransactionController.includeTimers">false</boolProp>
             </TransactionController>
@@ -1336,7 +1336,7 @@ if (extract) {
                 </elementProp>
               </HTTPSamplerProxy>
               <hashTree>
-                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                   <collectionProp name="HeaderManager.headers">
                     <elementProp name="Sec-Fetch-Mode" elementType="Header">
                       <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -1405,7 +1405,7 @@ if (extract) {
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
-                <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion">
+                <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
                   <stringProp name="BeanShellAssertion.query">String response = prev.getResponseDataAsString();
 String txt = &quot;BlazeDemo Confirmation&quot;;
 boolean extract = response.contains(txt);
@@ -1423,7 +1423,7 @@ if (extract) {
                   <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
                 </BeanShellAssertion>
                 <hashTree/>
-                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor">
+                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
                   <boolProp name="resetInterpreter">false</boolProp>
                   <stringProp name="parameters"></stringProp>
                   <stringProp name="filename"></stringProp>
@@ -1451,7 +1451,7 @@ if(extract){
                   <stringProp name="Assertion.scope">all</stringProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="ID">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="ID" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">ID</stringProp>
                   <stringProp name="RegexExtractor.regex">&lt;td&gt;Id&lt;/td&gt;\s*&lt;td&gt;(\d+)&lt;/td&gt;</stringProp>
@@ -1466,7 +1466,7 @@ Match[1][1]=1750667880935</stringProp>
                   <stringProp name="Sample.scope">all</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor">
+                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
                   <boolProp name="resetInterpreter">false</boolProp>
                   <stringProp name="parameters"></stringProp>
                   <stringProp name="filename"></stringProp>
@@ -1487,7 +1487,7 @@ if (response.contains(extractedId)) {
             </hashTree>
           </hashTree>
         </hashTree>
-        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="false">
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller">
           <stringProp name="IfController.condition">${__javaScript(&quot;${Failure}&quot;==&quot;false&quot;)}</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
           <boolProp name="IfController.useExpression">true</boolProp>
@@ -1498,7 +1498,7 @@ if (response.contains(extractedId)) {
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/reserve.php-20" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/reserve.php-20">
               <stringProp name="HTTPSampler.domain">www.blazedemo.com</stringProp>
               <stringProp name="HTTPSampler.port">4${flight_number}</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1527,7 +1527,7 @@ if (response.contains(extractedId)) {
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -1596,7 +1596,7 @@ if (response.contains(extractedId)) {
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor- to and from city" enabled="true">
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor- to and from city">
                 <stringProp name="filename"></stringProp>
                 <stringProp name="parameters"></stringProp>
                 <boolProp name="resetInterpreter">false</boolProp>
@@ -1608,7 +1608,7 @@ vars.put(&quot;fromPort&quot;,from[i]);
 vars.put(&quot;toPort&quot;,toCity[j]);</stringProp>
               </BeanShellPreProcessor>
               <hashTree/>
-              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-flight id" enabled="true">
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-flight id">
                 <boolProp name="resetInterpreter">false</boolProp>
                 <stringProp name="parameters"></stringProp>
                 <stringProp name="filename"></stringProp>
@@ -1622,14 +1622,14 @@ Matcher matcher = pattern.matcher(response);
 
 if (matcher.find()) {
     String flightID = matcher.group(1);
-    vars.put(&quot;flightID&quot;, flightID);
+    vars.put(&quot;flight_id&quot;, flightID);
     log.info(&quot;Extracted Flight ID: &quot; + flightID);
 } else {
     log.info(&quot;Flight ID not found&quot;);
 }</stringProp>
               </BeanShellPostProcessor>
               <hashTree/>
-              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-substring destination city" enabled="true">
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-substring destination city">
                 <boolProp name="resetInterpreter">false</boolProp>
                 <stringProp name="parameters"></stringProp>
                 <stringProp name="filename"></stringProp>
@@ -1649,7 +1649,7 @@ else{
 </stringProp>
               </BeanShellPostProcessor>
               <hashTree/>
-              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion">
                 <stringProp name="BeanShellAssertion.query">String response = prev.getResponseDataAsString();
 String txt = &quot;Flights from Boston to Rome:&quot;;
 boolean extract = response.contains(txt);
@@ -1666,9 +1666,9 @@ if(extract) {
                 <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
               </BeanShellAssertion>
               <hashTree/>
-              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="flight_id" enabled="true">
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="flight_id" enabled="false">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-                <stringProp name="RegexExtractor.refname">flight_number</stringProp>
+                <stringProp name="RegexExtractor.refname">flight_id</stringProp>
                 <stringProp name="RegexExtractor.regex">value=&quot;(.*?)&quot; name=&quot;flight&quot;</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default">FLIGHT NUMBER NOT FOUND</stringProp>
@@ -1690,7 +1690,7 @@ Match[5][1]=4346</stringProp>
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="choose_this_flight" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="choose_this_flight">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -2392,7 +2392,7 @@ GÝ¨&gt;)ï¿½eï¿½ï¿½ï¿½ï¿½ï¿½&#x6;ï¿½ï¿½@&#x1;v]v&#x4;ï¿½ï¿½mï¿½&#x3;&gt;ï¿½ï¿½ufï
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/purchase.php-26" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/purchase.php-26">
               <stringProp name="HTTPSampler.domain">www.blazedemo.com</stringProp>
               <stringProp name="HTTPSampler.port">4${flight_number}</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2406,14 +2406,14 @@ GÝ¨&gt;)ï¿½eï¿½ï¿½ï¿½ï¿½ï¿½&#x6;ï¿½ï¿½@&#x1;v]v&#x4;ï¿½ï¿½mï¿½&#x3;&gt;ï¿½ï¿½ufï
                   <elementProp name="flight" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">flight</stringProp>
-                    <stringProp name="Argument.value">${flightID}</stringProp>
+                    <stringProp name="Argument.value">${flight_id}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="price" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">price</stringProp>
-                    <stringProp name="Argument.value">${flight_price}</stringProp>
+                    <stringProp name="Argument.value">${totalCost}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -2442,7 +2442,7 @@ GÝ¨&gt;)ï¿½eï¿½ï¿½ï¿½ï¿½ï¿½&#x6;ï¿½ï¿½@&#x1;v]v&#x4;ï¿½ï¿½mï¿½&#x3;&gt;ï¿½ï¿½ufï
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2511,7 +2511,7 @@ GÝ¨&gt;)ï¿½eï¿½ï¿½ï¿½ï¿½ï¿½&#x6;ï¿½ï¿½@&#x1;v]v&#x4;ï¿½ï¿½mï¿½&#x3;&gt;ï¿½ï¿½ufï
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-total price" enabled="true">
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor-total price">
                 <boolProp name="resetInterpreter">false</boolProp>
                 <stringProp name="parameters"></stringProp>
                 <stringProp name="filename"></stringProp>
@@ -2525,8 +2525,13 @@ int feesStart = response.indexOf(&quot;Arbitrary Fees and Taxes: &quot;) + &quot
 int feesEnd = response.indexOf(&quot;&lt;/p&gt;&quot;, feesStart);
 String feesStr = response.substring(feesStart, feesEnd);
 
-log.info(&quot;Price is: &quot; + priceStr);
-log.info(&quot;Fees is: &quot; + feesStr);
+double price = Double.parseDouble(priceStr.trim());
+double fees = Double.parseDouble(feesStr.trim());
+double totalCost = price + fees;
+
+vars.put(&quot;totalCost&quot;, String.valueOf(totalCost));
+
+log.info(&quot;Total Cost Set: &quot; + totalCost);
 </stringProp>
               </BeanShellPostProcessor>
               <hashTree/>
@@ -2547,14 +2552,38 @@ if (extract) {
                 <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
               </BeanShellAssertion>
               <hashTree/>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="false">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">String response = prev.getResponseDataAsString();
+
+int priceStart = response.indexOf(&quot;Price: &quot;) + &quot;Price: &quot;.length();
+int priceEnd = response.indexOf(&quot;&lt;/p&gt;&quot;, priceStart);
+String priceStr = response.substring(priceStart, priceEnd);
+
+int feesStart = response.indexOf(&quot;Arbitrary Fees and Taxes: &quot;) + &quot;Arbitrary Fees and Taxes: &quot;.length();
+int feesEnd = response.indexOf(&quot;&lt;/p&gt;&quot;, feesStart);
+String feesStr = response.substring(feesStart, feesEnd);
+
+double price = Double.parseDouble(priceStr.trim());
+double fees = Double.parseDouble(feesStr.trim());
+double totalCost = price + fees;
+
+vars.put(&quot;totalCost&quot;, String.valueOf(totalCost));
+
+log.info(&quot;Total Cost Set: &quot; + totalCost);
+</stringProp>
+              </BeanShellPreProcessor>
+              <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="purchase_flight" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="purchase_flight">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/confirmation.php-66" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/confirmation.php-66">
               <stringProp name="HTTPSampler.domain">www.blazedemo.com</stringProp>
               <stringProp name="HTTPSampler.port">4${flight_number}</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2654,7 +2683,7 @@ if (extract) {
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Sec-Fetch-Mode" elementType="Header">
                     <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2723,7 +2752,7 @@ if (extract) {
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion">
                 <stringProp name="BeanShellAssertion.query">String response = prev.getResponseDataAsString();
 String txt = &quot;BlazeDemo Confirmation&quot;;
 boolean extract = response.contains(txt);
@@ -2741,7 +2770,7 @@ if (extract) {
                 <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
               </BeanShellAssertion>
               <hashTree/>
-              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor">
                 <boolProp name="resetInterpreter">false</boolProp>
                 <stringProp name="parameters"></stringProp>
                 <stringProp name="filename"></stringProp>
@@ -2758,7 +2787,7 @@ if(extract){
 }</stringProp>
               </BeanShellPostProcessor>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion-price validation" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion-price validation" enabled="false">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1270109056">Thank you for your purchase today!</stringProp>
                 </collectionProp>
@@ -2769,7 +2798,7 @@ if(extract){
                 <stringProp name="Assertion.scope">all</stringProp>
               </ResponseAssertion>
               <hashTree/>
-              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="ID" enabled="true">
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="ID">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">ID</stringProp>
                 <stringProp name="RegexExtractor.regex">&lt;td&gt;Id&lt;/td&gt;\s*&lt;td&gt;(\d+)&lt;/td&gt;</stringProp>
@@ -2804,7 +2833,7 @@ if (response.contains(extractedId)) {
             </hashTree>
           </hashTree>
         </hashTree>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -2881,7 +2910,7 @@ if (response.contains(extractedId)) {
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler">
           <boolProp name="displayJMeterProperties">false</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
           <boolProp name="displaySystemProperties">false</boolProp>
